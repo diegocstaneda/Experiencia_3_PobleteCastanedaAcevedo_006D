@@ -1,0 +1,514 @@
+img{display: block; margin: 0 auto;}
+body{ font-family: arial;
+background-image: url(img/bg.jpg)   ; }
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+label{
+    margin-left: 0px;
+    margin-right: 20px;
+
+}
+.form-direccion{
+    width: 750px;
+    height: 650px;
+    background:black ;
+    margin: auto;
+    margin-top: 180px;
+    box-shadow: 7px 13px 37px green;
+    padding: 20px 30px;
+    color: white;
+    border-top: 4px  solid green;
+
+}
+.title-direccion{
+    font-size: 25px;
+    color: chartreuse;
+}
+
+
+.form-registro{
+    width: 1250px;
+    height: 1250px;
+    background:black ;
+    margin: auto;
+    margin-top: 180px;
+    box-shadow: 7px 13px 37px green;
+    padding: 20px 30px;
+    color: white;
+    border-top: 4px  solid green;
+}
+.gen-title{  
+    font-size: 25px;
+    color: chartreuse;
+}
+.title-registro{
+   font-size: 25px;
+   color: chartreuse;
+}
+
+.form-registro form .user-details{
+    padding-left: 34%;
+    margin-left:auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+form .user-details .input-box{
+    margin: 15px;
+    width: calc(100% /2 - 20px);
+}
+.user-details .input-box .details{
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+
+}
+.user-details .input-box input{
+    height: 45px;
+    width: 100%;
+    outline: none;
+    border-radius: 5PX;
+    border: 1px solid none;
+    padding-left: 15px;
+    font-size: 16px;
+
+}
+.user-details .input-box input:focus,
+.user-details .input-box input:valid{
+    border-color:chartreuse;
+}
+form .gen-details .gen-title{
+    font-size:20px ;
+    font-weight: 500;
+}
+form .gen-details .category{
+    display: flex;
+    width: 80%;
+    margin: 14px 0;
+    justify-content: space-between;
+}
+
+
+.button-registro{
+    font-family:"Bauhaus 93";
+    width: 100%;
+    color: white;
+    font-size: large;
+    background: #000000;
+    margin-top: 10px;
+    margin-left:initial ;
+    margin-right:0px ;
+    margin-bottom:2px ;
+    border: green 2px solid;
+    padding: 4px;
+    outline: none;
+    height: 100%;
+
+
+}
+.button-registro:hover
+{
+    box-shadow: 7px 7px 37px green;
+    background:green;
+    border: green 2px solid;
+
+}
+
+.button-pequeno
+{
+    font-family:"Bauhaus 93";
+    width: 15%;
+    color: white;
+    font-size: large;
+    background: #000000;
+    margin-top: 10px;
+    margin-left:initial ;
+    margin-right:0px ;
+    margin-bottom:2px ;
+    border: green 2px solid;
+    padding: 4px;
+    outline: none;
+    height: 100%;
+
+}
+
+
+.button-pequeno:hover
+{
+    box-shadow: 7px 7px 37px green;
+    background:green;
+    border: green 2px solid;
+
+}
+
+.form-login{
+    width: 400px;
+    height: 380px;
+    background:black ;
+    margin: auto;
+    margin-top: 180px;
+    box-shadow: 7px 13px 37px green;
+    padding: 20px 30px;
+    color: white;
+    border-top: 4px  solid green;
+}
+
+
+.controls{
+    width: 100%;
+    border: 1px solid green;
+    margin-bottom: 15px;
+    padding: 11px 10px;
+    background: white;
+}
+
+.buttons{
+    font-family:"Bauhaus 93";
+    color: white;
+    font-size: large;
+    background: #000000;
+    margin-top: 10px;
+    margin-left:initial ;
+    margin-right:0px ;
+    margin-bottom:10px ;
+    border: green 2px solid;
+    padding: 4px;
+    height: 100%;
+    width: 100%;
+}
+.buttons:hover
+{
+    box-shadow: 7px 7px 37px green;
+    background:green;
+    border: green 2px solid;
+}
+
+.form-login p{
+    height: 40px;
+    text-align: center;
+}
+
+.form-login a{
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.form-login a:hover{
+    text-decoration: underline;
+}
+
+
+.fondo{
+    background-color: black;
+} 
+
+.color{
+    color: white;
+}
+
+h1
+{
+    font-family: "Bauhaus 93";
+}
+h2
+{
+    font-family: "Bauhaus 93";
+}
+h3{
+    color:black;
+    font-family:fantasy;
+}
+h4
+{
+    font-family: "Bauhaus 93";
+}
+h6
+{
+    font-family: "Bauhaus 93";
+}
+
+
+.carousel-control-prev-icon {
+    background-image: none;
+    color: green;
+    font-size: 20px;
+  }
+
+
+iframe
+{
+    margin-top:100px;
+}
+
+h7
+{
+    color:white;
+    text-align: center;
+}
+h5{
+    margin: 300px;
+    color:#000000;
+    
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.Mision{
+    font-family: "Bauhaus 93";
+    text-align: center;
+    margin-top: 50px;
+    color:#000000;
+    
+}
+.Misiont
+{
+    margin-left: 100px;
+    margin-right: 100px;
+    color:#0c0c0c;
+    
+    margin-right: 100px;
+    
+   
+    font-family:Arial, Helvetica, sans-serif;
+}
+.Quienes
+{
+    font-family: "Bauhaus 93";
+    text-align: center;
+    color:#000000;
+    
+    
+}
+.Quienest
+{
+    margin-left: 100px;
+    margin-right: 100px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.Vision
+{
+    font-family: "Bauhaus 93";
+    text-align: center;
+    color:#000000;
+    
+
+}
+.Visiont
+{
+    margin-left: 100px;
+    margin-right: 100px;
+
+    font-family:Arial, Helvetica, sans-serif;
+}  
+img.mision
+{
+    float:center;
+    margin-left: 100px;
+    margin-right: 100px;
+    height: auto;
+    
+    
+}
+img.vision
+{
+   
+    margin-left: 100px;
+    margin-right: 100px;
+    float:center;
+    height: auto;
+    
+    
+}  
+
+#Quienesvid
+{
+    float: left;
+    width:50%;
+    margin-bottom: 100px;
+   
+    
+} 
+#Quienest
+{
+    float:left;
+    width:50%;
+    margin-bottom: 250px;
+    
+    
+}
+    
+
+#Misionf
+{
+    float: left;
+    width:50%;
+    margin-bottom: 50px;
+    
+    
+
+}
+#Misiont
+{
+    float: right;
+    width:50%;
+    
+    margin-bottom: 100px;
+   
+}
+#Visionf
+{
+    
+    
+    float: right;
+    width:50%;
+    margin-bottom: 100px;
+    
+    
+}
+#Visiont
+{
+    float:left;
+    width:50%;
+    margin-bottom: 400px;
+    
+    
+}
+
+
+@media screen and (max-width: 1900px)
+{
+
+    .button-pequeno{
+        width: 100%;
+    }
+    .form-registro{
+        max-width: 100%;
+    }
+    form .user-details.input-box{
+        margin-bottom: 15px;
+        width: 100%;
+    }
+
+    form .gen-details .category{
+        width: 100%;
+    }
+
+    .form-registro form .user-details{
+        max-height: 300px;
+        overflow-y: scroll;
+    }
+
+    .user-details ::-webkit-scrollbar{
+        width: 0;
+    }
+
+    
+
+
+    h4{
+        font-weight: 200;;
+        color:black;
+    }
+        .table thead{
+            display: none;
+        }
+        .table,.table thead, .table tbody, .table tr, .table td, .table th{
+            display: block;
+            width: 100%;
+        }
+        .table tr{
+            margin-bottom: 15px;
+        }
+        .table th{
+            margin-bottom: 15px;
+        }
+        .table td{
+            text-align: center;
+            padding-left: auto;
+            text-align: center;
+            position: relative;
+        }
+        .table td::before{
+            content: attr(data-label);
+            position: absolute;
+            left: 0;
+            width: 50%;
+            padding-left: 15px;
+            font-size: 15px;
+            font-weight: bold;
+    
+        }
+    #Quienest
+    {width: 100%;
+    margin-bottom: 100px;}
+    #Quienesvid
+    {width: 100%;
+    text-align: center;}
+    #Misiont
+    {width: 100%;
+    
+    }
+    #Misionf
+    {width: 100%;
+    text-align: center;
+    
+    }
+    #Visiont
+    {width: 100%;
+    margin-bottom: 100px;}
+    #Visionf
+    {width: 100%;
+    margin-left:  0px;
+    margin-right: 0px;
+    text-align: center;
+    
+    }
+
+    img.mision
+{
+    float:center;
+    height: auto;
+    width: 400px;
+    height: 200px;
+    margin-left:  0px;
+    margin-right: 0px;
+    
+    
+}
+img.vision
+{
+    float:center;
+    height: auto;
+    width: 400px;
+    height: 200px;
+    margin-left:  0px;
+    margin-right: 0px;
+    
+    
+}
+h7
+{
+    margin-left: 400px;
+    color: white;
+}
+iframe
+{
+    margin-top:100px;
+    width: 400px;
+    height: 200px;
+    
+}
+
+.nav-item
+{
+    text-decoration: none;
+    font-family:"Bauhaus 93";
+    color: white !important ;
+}
+
+ 
+}

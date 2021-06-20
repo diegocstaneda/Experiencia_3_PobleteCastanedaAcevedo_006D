@@ -1,0 +1,22 @@
+.navbar-custom {
+    background-color: black;
+} 
+
+.bg-custom{
+
+    background-color: black;
+}
+
+h1{ 
+    text-align:center;
+}
+
+h4{
+    text-align:center;
+    margin-right: 0px;
+}
+.container-fluid{
+    text-align:center;
+    margin-right: 150px;
+
+}
