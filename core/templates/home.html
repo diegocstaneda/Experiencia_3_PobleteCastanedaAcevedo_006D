@@ -1,3 +1,10 @@
+{%extends 'base.html' %}
+{% load static %}
+
+
+{% block content %}
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,10 +19,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.0/css/mdb.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link href="{%static 'css/styles.css'}" type="text/css" rel="stylesheet">
-    <link href="{%static 'css/bootstrap.css'}" type="text/css" rel="stylesheet">
-    <link href="{%static 'css/bootstrap2.css'}" type="text/css" rel="stylesheet">
-    <link href="{%static 'css/support.css'}" type="text/css" rel="stylesheet">
+    <link href="{%static 'css/styles.css'%}" type="text/css" rel="stylesheet">
+    <link href="{%static 'css/bootstrap.css'%}" type="text/css" rel="stylesheet">
+    <link href="{%static 'css/bootstrap2.css'%}" type="text/css" rel="stylesheet">
+    <link href="{%static 'css/support.css'%}" type="text/css" rel="stylesheet">
     <link href="{% static 'img/logo.png' %}" rel="icon" type="image/x-icon" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -37,26 +44,9 @@
   <link href="{% static 'css/styles.css' %}" rel="stylesheet">
 </head>
 
-<body id="page-top">
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
-        <div class="container">
-            <a class="navbar-brand js-scroll-trigger" href="{% url 'home' %}"><img src="{% static 'img/logo.png' %}" alt=""></a>
-          <button class="navbar-toggler navbar-toggler-right text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-            Menu
-            <i class="fas fa-bars"></i>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarResponsive">
-            <ul class="navbar-nav ml-auto">
-              <li class="nav-item mx-0 mx-lg-1">
-                <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="{% url 'home' %}">Inicio</a>
-              </li>
-    
-            </ul>
-          </div>
-      </nav>
-
+<body>
         {%load static%}
+        <h1>BIENVENIDOS A DCH VENTAS</h1>
         <div class="row">
             <img src="{% static 'img/fondo1.jpg'%}">
         </div>
@@ -106,73 +96,11 @@
         </div>
  
     </div>
+  
     
-      <footer class="page-footer bg-custom">
-
-        <div class="bg-custom">
-            <div class="container">
-                <div class="row py-4 d-flex align-items-center">
-
-                    <div class="col-md-12 text-center">
-                        <a href="#"><i class="fab fa-facebook-f text-white mr-4"></i></a>
-                        <a href="#"><i class="fab fa-twitter text-white mr-4"></i></a>
-                        <a href="#"><i class="fab fa-google-plus-g text-white mr-4"></i></a>
-                        <a href="#"><i class="fab fa-instagram text-white"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="container text-center text-md-left mt-5">
-            
-            <div class="row">
-                <div class="col-md-3 mx-auto mb-3">
-                    <h6 class="text-uppercase font-weight-bold">DCH EMPRESA</h6>
-                    <hr class="bg-success mb-4 mt-0 d-inline-block mx-auto" style="width: 125px; height:2px;">
-                    <p class="mt-2">Copyright © 2021 DCH S.A. Todos los derechos reservados.
-                         Prohibida su copia parcial o total bajo la ley nacional e internacional
-                         <br>
-                         <br>
-                         Hector Acevedo<br>
-                         Cristobal Poblete<br>
-                         Diego Castañeda
-                        </p>
-                </div>
-
-                <div class="col-md-2 mx-auto mb-4">
-                    <h6 class="text-uppercase font-weight-bold">Catalogo</h6>
-                    <hr class="bg-success mb-4 mt-0 d-inline-block mx-auto" style="width: 85px; height:2px;">
-
-                    <ul class="list-unstyled">
-                        <li class="my-2"><a href="Index6.html">Procesadores</a></li>
-                        <li class="my-2"><a href="Index5.html">Tarjetas de video </a></li>
-                        <li class="my-2"><a href="Index7.html">Gabinetes </a></li>
-                        <li class="my-2"><a href="Index4.html">Placas Madre </a></li>
-                    </ul>
-
-                </div>    
-                <div class="col-md-2 mx-auto mb-4">
-                    <h6 class="text-uppercase font-weight-bold">Enlaces de ayuda</h6>
-                    <hr class="bg-success mb-4 mt-0 d-inline-block mx-auto" style="width: 165px; height:2px;">
-                    <ul class="list-unstyled">
-
-                        <li class="my-2"><a href="#">Contacto:<br> +56-9 98522390 WhatsApp Privado </a></li>
-                        <li class="my-2"><a href="Index1 .html">Inicio </a></li>
-                        <li class="my-2"><a href="Index8.html">Ubicación</a></li>
-                    </ul>
-
-                </div>    
-            </div>
-            
-        </div>
-
-
-
-
-    </footer>
-
-
 </body>
 
 
 </html>
+
+{% endblock %}

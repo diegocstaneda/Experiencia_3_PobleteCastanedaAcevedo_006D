@@ -1,6 +1,19 @@
+{%extends 'base.html' %}
+{% load static %}
+
+
+{% block content %}
+
 <!DOCTYPE html>
 <html>
     
+    <style>
+        img{display: block; margin: 0 auto;}
+        body{ font-family: arial;
+        background-image: url('{% static "img/bg.jpg" %}');
+        }
+
+    </style>   
 <head>
   <title>DCH</title>
   <meta charset="utf-8">
@@ -11,134 +24,28 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.0/css/mdb.min.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <link href="css/estilos.css" type="text/css" rel="stylesheet"> 
+  <link href="{%static 'css/styles.css'%}" type="text/css" rel="stylesheet">
+  <link href="{%static 'css/bootstrap.css'%}" type="text/css" rel="stylesheet">
+  <link href="{%static 'css/bootstrap2.css'%}" type="text/css" rel="stylesheet">
+  <link href="{%static 'css/support.css'%}" type="text/css" rel="stylesheet">
+  <link href="{% static 'img/logo.png' %}" rel="icon" type="image/x-icon" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </head>
 <body>
-
-        <nav class="navbar navbar-expand-sm  navbar-custom">
-        <!-- Brand -->
-        <a class="navbar-brand" href="Index1 .html" >
-            <img src="img/logo.png" alt="logo" style="width:150px; " >
-        </a>
-
-        <!-- Links -->
-        <ul class="navbar-nav ml-lg-auto">
-            <li class="nav-item">
-            <a class="nav-link" href="Index1 .html">Inicio</a>
-            </li>
-
-            <!-- Dropdown -->
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="btn-dropdown-service" data-toggle="dropdown">
-                    Catalogo
-                </a>
-                <div class="dropdown-menu">
-                    <a class="dropdown-item" href="Index7.html">Gabinetes</a>
-                    <a class="dropdown-item" href="Index6.html">Procesadores</a>
-                    <a class="dropdown-item" href="Index5.html">Tarjetas de video</a>
-                    <a class="dropdown-item" href="Index4.html">Placas Madre</a>
-                </div>
-                </li>
-            <li class="nav-item">
-            <a class="nav-link" href="Index3.html">Quienes Somos</a>
-            <li class="nav-item">
-                <a class="nav-link" href="Index9.html">Iniciar Sesión </a>
-            </li>
-        </ul>
-        </nav>
-        
-        <section class="form-login">
-            <img src="img/logo.png" alt="logo" style="width:130px; "> <br>
-            <input class="controls" type="text" id="nomUser" name="user" placeholder="Usuario" required autofocus><br>
-            <input class="controls" type="password" id="passUser" name="pass" placeholder="Contraseña" required minlength="5" maxlength="9" > <br>
-            <input class="buttons" type="submit" value="Ingresar" action="#"> <br> <br>
-            <p><a href="#">¿Olvidaste tu Contraseña? </a> 
-            <a href="Index10.html">Crear Usuario </a> 
-
+    
+    <section class="form-login">
+        <img src="{%static 'img/logo.png'%}" alt="logo" style="width:130px; "> <br>
+        <input class="controls" type="text" id="nomUser" name="user" placeholder="Usuario" required autofocus><br>
+        <input class="controls" type="password" id="passUser" name="pass" placeholder="Contraseña" required minlength="5" maxlength="9" > <br>
+        <input class="buttons" type="submit" value="Ingresar" action="#"> <br> <br>
+        <p><a href="#">¿Olvidaste tu Contraseña? </a> 
+        <a href="{%static 'registrarse.html%}">Crear Usuario </a> 
         </section>
-<hr>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<hr>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<hr>
-
-    <footer class="page-footer bg-custom">
-
-        <div class="bg-custom">
-            <div class="container">
-                <div class="row py-4 d-flex align-items-center">
-
-                    <div class="col-md-12 text-center">
-                        <a href="#"><i class="fab fa-facebook-f text-white mr-4"></i></a>
-                        <a href="#"><i class="fab fa-twitter text-white mr-4"></i></a>
-                        <a href="#"><i class="fab fa-google-plus-g text-white mr-4"></i></a>
-                        <a href="#"><i class="fab fa-instagram text-white"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="container text-center text-md-left mt-5">
-            
-            <div class="row">
-                <div class="col-md-3 mx-auto mb-3">
-                    <h6 class="text-uppercase font-weight-bold">DCH EMPRESA</h6>
-                    <hr class="bg-success mb-4 mt-0 d-inline-block mx-auto" style="width: 125px; height:2px;">
-                    <p class="mt-2">Copyright © 2021 DCH S.A. Todos los derechos reservados.
-                         Prohibida su copia parcial o total bajo la ley nacional e internacional
-                         <br>
-                         <br>
-                         Hector Acevedo<br>
-                         Cristobal Poblete<br>
-                         Diego Castañeda
-                        </p>
-                </div>
-
-                <div class="col-md-2 mx-auto mb-4">
-                    <h6 class="text-uppercase font-weight-bold">Catalogo</h6>
-                    <hr class="bg-success mb-4 mt-0 d-inline-block mx-auto" style="width: 85px; height:2px;">
-
-                    <ul class="list-unstyled">
-                        <li class="my-2"><a href="Index6.html">Procesadores</a></li>
-                        <li class="my-2"><a href="Index5.html">Tarjetas de video </a></li>
-                        <li class="my-2"><a href="Index7.html">Gabinetes </a></li>
-                        <li class="my-2"><a href="Index4.html">Placas Madre </a></li>
-                    </ul>
-
-                </div>    
-                <div class="col-md-2 mx-auto mb-4">
-                    <h6 class="text-uppercase font-weight-bold">Enlaces de ayuda</h6>
-                    <hr class="bg-success mb-4 mt-0 d-inline-block mx-auto" style="width: 165px; height:2px;">
-                    <ul class="list-unstyled">
-
-                        <li class="my-2"><a href="#">Contacto:<br> +56-9 98522390 WhatsApp Privado </a></li>
-                        <li class="my-2"><a href="Index1 .html">Inicio </a></li>
-                        <li class="my-2"><a href="Index8.html">Ubicación</a></li>
-                    </ul>
-
-                </div>    
-            </div>
-            
-        </div>
-
-
-
-
-    </footer>
-
+        
 </body>
 </html>
+
+{% endblock %}
