@@ -1,0 +1,201 @@
+{%extends 'base.html' %}
+{% load static %}
+
+
+{% block content %}
+
+<!DOCTYPE html>
+<html>
+    <style>
+        .navbar-custom {
+            background-color: black;
+        } 
+        
+        .bg-custom{
+
+            background-color: black;
+        }
+
+        h1{ 
+            text-align:center;
+        }
+
+        h4{
+            text-align:center;
+            margin-right: 0px;
+        }
+        .container-fluid{
+            text-align:center;
+            margin-right: 150px;
+
+        }
+
+        img{display: block; margin: 0 auto;}
+        body{ font-family: arial;
+        background-image: url(img/bg.jpg)   ; }
+
+
+
+        .error-control {
+        border: 1px solid red;
+    }
+
+    label.error {
+        color: red;
+        width: 300px;
+        font-size: medium;
+        margin-top: -5px;
+        margin-bottom: 10px;
+    }
+
+    </style>
+<head>
+    {%load static%}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.0/css/mdb.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.js"></script>
+    <link href="{%static 'css/styles.css'%}" type="text/css" rel="stylesheet">
+    <link href="{%static 'css/bootstrap.css'%}" type="text/css" rel="stylesheet">
+    <link href="{%static 'css/bootstrap2.css'%}" type="text/css" rel="stylesheet">
+    <link href="{%static 'css/support.css'%}" type="text/css" rel="stylesheet">
+    <script src="{% static 'js/validaciones.js' %}"></script>
+
+    <title>Agregar direccion</title>
+</head>
+<body id="bg" style="background-image: url('{% static 'img/bg.jpg'%}');">
+    <div class="form-direccion"><h2>Dirección</h2>
+        <div class="title-direccion"></div><br>
+          <form id ="direccion" method="post">
+            <label for="name">
+              <span>Nombre Contacto: </span>
+              <strong><abbr title="required">*</abbr></strong>
+            </label>
+            <input type="text" name="nombre" placeholder="Ingresa tu nombre" required>
+          </p>
+          <p>
+              <label for="Comuna">
+                <span>Comuna: </span>
+                <strong><abbr title="required">*</abbr></strong>
+              </label>
+              <input type="text" name="comuna1" placeholder="Ingresa comuna" required>
+            </p>
+            <p>
+          <label for="Direccion">
+                <span>Dirección: </span>
+                <strong><abbr title="required">*</abbr></strong>
+              </label>
+               <input type="text" id="direc" name="direccion1" placeholder="Ingresa dirección" required>
+               <br>
+               <br>
+              <select id="calle" name="pasaje">
+                  <option value="visa">Calle</option>
+                  <option value="mc">Pasaje</option>
+                  <option value="asdf">Avenida</option>
+                </select>
+                <label for="Numero">
+                  <span>Número: </span>
+                  <strong><abbr title="required">*</abbr></strong>
+                </label>
+                <input type="text" name="numeroc" minlength="4" placeholder="Ingresa Nro de casa"required>
+            </p>
+            <p>
+              <label for="domicilio">
+                <span>Tipo de domicilio:</span>
+              </label>
+              <select id="card" name="usercard">
+                <option value="ksa">Casa</option>
+                <option value="depa">Departamento</option>
+                <option value="condom">Condominio</option>
+              </select>
+            </p>
+            <p>
+              <label for="Telefono">
+                <span>Número de telefono: </span>
+                <strong><abbr title="required">*</abbr></strong>
+              </label>
+              <input type="text" name="telefono"  minlength="9" placeholder="Ingresa tu telefono" required>
+            </p>
+      </section>
+
+      <section>
+          <a href="{% url 'loggedin'%}"> 
+          <input type="button" class="button-pequeno" value="Volver"></a><p></p>
+          <p> <button type="submit" class="button-pequeno">Guardar</button> </p>
+          <p> <button type="reset" class="button-pequeno" >Limpiar</button> </p>
+      </section>
+      </form>
+
+      <div class="row">
+        <form method="POST" action="#" id="formulario">
+            {%csrf_token%}
+            <div class="form-group">
+                {{direccion_form.nombre.label}}
+                {{direccion_form.nombre}}
+            </div>
+        
+            <div class="form-group">
+                {{direccion_form.direccion.label}}
+                {{direccion_form.direccion}}
+            </div>
+
+            <div class="form-group">
+                {{direccion_form.comuna.label}}
+                {{direccion_form.comuna}}
+            </div>
+
+            <div class="form-group">
+                {{direccion_form.numedirec.label}}
+                {{direccion_form.numedirec}}
+            </div>
+
+            <div class="form-group">
+                {{direccion_form.telefono.label}}
+                {{direccion_form.telefono}}
+            </div>
+
+            <div class="form-group">
+                {{direccion_form.calle.label}}
+                {{direccion_form.calle}}
+            </div>
+
+            <div class="form-group">
+                {{direccion_form.tipocasa.label}}
+                {{direccion_form.tipocasa}}
+            </div>
+
+            <input type="submit" class="btn btn-danger" id="enviar" value="Enviar">
+            <input type="submit" class="btn btn-primary" id="limpiar" value="Limpiar">
+        </form>
+</div>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+</body>
+</html>
+
+{% endblock %}

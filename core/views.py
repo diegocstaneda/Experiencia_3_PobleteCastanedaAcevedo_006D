@@ -1,5 +1,6 @@
-from django.shortcuts import render
+from django.shortcuts import render,redirect
 from .models import Direccion,TipoCasa,Calle
+from .forms import DireccionForm
 
 # Create your views here.
 def home(request):
@@ -25,3 +26,14 @@ def agregardireccion(request):
 def nodisponible(request):
 
     return render (request , 'nodisponible.html')
+
+def form_direccion(request):
+    if request.method=='POST':
+        direccion_form = DireccionForm(request.POST)
+        if direccion_form.is_valid():
+            direccion_form.save()
+            return redirect('home')
+
+    else:
+        direccion_form=DireccionForm()
+    return render(request, 'core/form_creardireccion.html',{'direccion_form':direccion_form})
