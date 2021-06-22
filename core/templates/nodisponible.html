@@ -1,0 +1,49 @@
+{%extends 'base.html' %}
+{% load static %}
+
+
+{% block content %}
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {%block title%}<title>VENTA DE PC DCH</title>{% endblock %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    {%load static%}
+    <link href="{% static 'css/styles.css' %}" rel="stylesheet">
+
+</head>
+
+<body id="bg" style="background-image: url('{% static 'img/bg.jpg'%}');">
+
+    {%load static%}
+    <div class="container-fluid">
+
+    <a>
+    <img src="{%static 'img/logo.png'%}">
+    </a>
+    <br>
+    <br>
+    <h4>Lo sentimos :(</h4>
+    <h4>No disponible aún</h4>
+
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+</body>
+</html>
+
+{% endblock %}

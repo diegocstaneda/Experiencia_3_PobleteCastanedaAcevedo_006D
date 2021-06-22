@@ -50,3 +50,40 @@ $(function()
           }
       }); 
   }); 
+
+$(function() 
+{
+    $("#direccion").validate({
+         rules: {
+                nombre:"required",
+                apellido: "required",
+                comuna1: "required",
+                telefono: "required",
+                direccion1: "required",
+                numeroc: "required"         
+                
+            }, 
+        messages: {
+            nombre:{
+                required: 'Ingresa tu nombre'
+            },
+            apellido:{
+                required: 'Ingresa tu apellido'
+            },
+            comuna1:{
+                required: 'Ingresa tu comuna'
+              },
+            direccion1:{
+                required: 'Ingresa tu dirección'
+            },
+            numeroc: {
+                required: 'Ingrese un número de casa',
+                minlength: 'Cantidad de digitos insuficiente'
+              },
+            telefono:{
+                required: 'Ingrese un número de celular',
+                minlength: 'Cantidad de digitos insuficiente'
+            },
+        }
+    }); 
+}); 

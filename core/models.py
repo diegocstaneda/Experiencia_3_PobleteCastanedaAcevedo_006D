@@ -19,8 +19,12 @@ class Direccion(models.Model):
     nombre = models.CharField(max_length=25, primary_key=True, verbose_name='nombre')
     direccion = models.CharField(max_length=30, verbose_name='direccion')
     comuna = models.CharField(max_length=25, verbose_name='Comuna')
-    calle = models.ForeignKey(Calle, on_delete=models.CASCADE)
+    numedirec = models.CharField(max_length=3, verbose_name='numerdir', default='')
+    telefono = models.CharField(max_length=9, verbose_name='telefono,', default='')
     tipocasa = models.ForeignKey(TipoCasa, default='', on_delete=models.SET_NULL, null=True, blank=False)
+    calle = models.ForeignKey(Calle, on_delete=models.CASCADE)
+    
+    
 
     def __str__(self):
         return self.nombre

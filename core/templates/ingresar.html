@@ -5,15 +5,7 @@
 {% block content %}
 
 <!DOCTYPE html>
-<html>
-    
-    <style>
-        img{display: block; margin: 0 auto;}
-        body{ font-family: arial;
-        background-image: url('{% static "img/bg.jpg" %}');
-        }
-
-    </style>   
+<html>  
 <head>
   <title>DCH</title>
   <meta charset="utf-8">
@@ -34,17 +26,32 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </head>
-<body>
+<body id="bg" style="background-image: url('{% static 'img/bg.jpg'%}');">
     
     <section class="form-login">
         <img src="{%static 'img/logo.png'%}" alt="logo" style="width:130px; "> <br>
         <input class="controls" type="text" id="nomUser" name="user" placeholder="Usuario" required autofocus><br>
         <input class="controls" type="password" id="passUser" name="pass" placeholder="Contraseña" required minlength="5" maxlength="9" > <br>
-        <input class="buttons" type="submit" value="Ingresar" action="#"> <br> <br>
+        <a href="{% url 'loggedin'%}"> 
+        <input class="button" type="submit" value="Ingresar" action="#">
         <p><a href="#">¿Olvidaste tu Contraseña? </a> 
-        <a href="{%static 'registrarse.html%}">Crear Usuario </a> 
+        <a href="#">Crear Usuario </a> 
+        </form>
         </section>
-        
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
 </body>
 </html>
 

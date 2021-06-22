@@ -51,20 +51,20 @@
       
               <nav class="navbar navbar-expand-sm  navbar-custom">
               <!-- Brand -->
-              <a class="navbar-brand" href="{%static url 'home.html'%}">
+              <a class="navbar-brand" href="{% url 'home'%}">
                   <img src="{%static 'img/logo.png'%}" alt="logo" style="width:80px; " >
               </a>
       
               <!-- Links -->
               <ul class="navbar-nav ml-lg-auto">
                   <li class="nav-item">
-                  <a class="nav-link" href="{%static url 'home'%}">Inicio</a>
+                    <a class="nav-link" href="{% url 'home' %}">Inicio</a>
                   </li>
                   <li class="nav-item">
-                      <a class="nav-link" href="{%static url 'login.html'%}">Iniciar Sesión </a>
+                    <a class="nav-link" href="{% url 'ingresar' %}">Iniciar Sesión </a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="{%static url 'registro.html'%}">Registrarse </a>
+                    <a class="nav-link" href="{% url 'nodisponible' %}">Registrarse </a>
                 </li>
       
               </ul>
