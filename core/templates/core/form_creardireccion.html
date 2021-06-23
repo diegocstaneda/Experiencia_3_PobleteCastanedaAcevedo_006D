@@ -75,67 +75,6 @@
 </head>
 <body id="bg" style="background-image: url('{% static 'img/bg.jpg'%}');">
     <div class="form-direccion"><h2>Dirección</h2>
-        <div class="title-direccion"></div><br>
-          <form id ="direccion" method="post">
-            <label for="name">
-              <span>Nombre Contacto: </span>
-              <strong><abbr title="required">*</abbr></strong>
-            </label>
-            <input type="text" name="nombre" placeholder="Ingresa tu nombre" required>
-          </p>
-          <p>
-              <label for="Comuna">
-                <span>Comuna: </span>
-                <strong><abbr title="required">*</abbr></strong>
-              </label>
-              <input type="text" name="comuna1" placeholder="Ingresa comuna" required>
-            </p>
-            <p>
-          <label for="Direccion">
-                <span>Dirección: </span>
-                <strong><abbr title="required">*</abbr></strong>
-              </label>
-               <input type="text" id="direc" name="direccion1" placeholder="Ingresa dirección" required>
-               <br>
-               <br>
-              <select id="calle" name="pasaje">
-                  <option value="visa">Calle</option>
-                  <option value="mc">Pasaje</option>
-                  <option value="asdf">Avenida</option>
-                </select>
-                <label for="Numero">
-                  <span>Número: </span>
-                  <strong><abbr title="required">*</abbr></strong>
-                </label>
-                <input type="text" name="numeroc" minlength="4" placeholder="Ingresa Nro de casa"required>
-            </p>
-            <p>
-              <label for="domicilio">
-                <span>Tipo de domicilio:</span>
-              </label>
-              <select id="card" name="usercard">
-                <option value="ksa">Casa</option>
-                <option value="depa">Departamento</option>
-                <option value="condom">Condominio</option>
-              </select>
-            </p>
-            <p>
-              <label for="Telefono">
-                <span>Número de telefono: </span>
-                <strong><abbr title="required">*</abbr></strong>
-              </label>
-              <input type="text" name="telefono"  minlength="9" placeholder="Ingresa tu telefono" required>
-            </p>
-      </section>
-
-      <section>
-          <a href="{% url 'loggedin'%}"> 
-          <input type="button" class="button-pequeno" value="Volver"></a><p></p>
-          <p> <button type="submit" class="button-pequeno">Guardar</button> </p>
-          <p> <button type="reset" class="button-pequeno" >Limpiar</button> </p>
-      </section>
-      </form>
-
       <div class="row">
         <form method="POST" action="#" id="formulario">
             {%csrf_token%}
@@ -174,9 +113,13 @@
                 {{direccion_form.tipocasa}}
             </div>
 
-            <input type="submit" class="btn btn-danger" id="enviar" value="Enviar">
-            <input type="submit" class="btn btn-primary" id="limpiar" value="Limpiar">
-        </form>
+            <section>
+              <a href="{% url 'loggedin'%}"> 
+              <input type="button" class="button-pequeno" value="Volver"></a><p></p>
+              <p> <button type="submit" class="button-pequeno">Guardar</button> </p>
+              <p> <button type="reset" class="button-pequeno" >Limpiar</button> </p>
+          </section>
+          </form>
 </div>
 
 <br>

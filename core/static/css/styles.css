@@ -11,8 +11,8 @@ label{
 
 }
 .form-direccion{
-    width: 750px;
-    height: 650px;
+    width: 1550px;
+    height: 1750px;
     background:black ;
     margin: auto;
     margin-top: 180px;
@@ -133,7 +133,7 @@ form .gen-details .category{
 .button-pequeno
 {
     font-family:"Bauhaus 93";
-    width: 15%;
+    width: 100%;
     color: white;
     font-size: large;
     background: #000000;
